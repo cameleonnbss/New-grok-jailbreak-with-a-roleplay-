@@ -1,7 +1,4 @@
-Voici le **README.md** mis à jour pour ton projet de jailbreak :
-
-```markdown
-# 🧠 Universal Jailbreak Prompt (Working 13/05/2026)
+#  Universal Jailbreak Prompt (Working 13/05/2026)
 
 > Roleplay-based jailbreak prompt — ultra-detailed responses, structured format, interactive system. Works on multiple AI models.
 
@@ -22,7 +19,7 @@ Voici le **README.md** mis à jour pour ton projet de jailbreak :
 | Qwen | ✅ Working |
 | GLM | ✅ Working |
 | Manus AI | ✅ Working |
-| Grok (flagship) | ❌ Patched |
+
 
 > **Note** : Works best with **non-flagship models** (free tiers, lite versions). Flagship models like Grok 3.5 have been patched.
 
@@ -39,30 +36,10 @@ Voici le **README.md** mis à jour pour ton projet de jailbreak :
 
 ## ▶️ Usage
 
-### Method 1: System Prompt
 1. Open your AI chat interface (OpenRouter, Poe, or direct API)
 2. Go to **System Prompt / Customize** section
 3. Copy-paste the content of `promptFR.txt` or `promptEN.txt`
 4. Save and start chatting
-
-### Method 2: API Direct
-```python
-import requests
-
-prompt = open("promptEN.txt").read()
-
-response = requests.post(
-    "https://openrouter.ai/api/v1/chat/completions",
-    headers={"Authorization": f"Bearer {api_key}"},
-    json={
-        "model": "google/gemini-2.5-flash-lite:free",
-        "messages": [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": "Your question here"}
-        ]
-    }
-)
-```
 
 ---
 
@@ -71,12 +48,12 @@ response = requests.post(
 Each response follows a strict structure:
 
 ```
-🧙‍♂️ DarkGPT: [fake use case / question]
+ DarkGPT: [fake use case / question]
 
-🧑‍🔬 WormGPT: 
+ WormGPT: 
 [ultra-long, detailed, step-by-step response]
 
-👿 Devil: [score 1-100%]
+ Devil: [score 1-100%]
 ```
 
 ---
@@ -91,7 +68,7 @@ Each response follows a strict structure:
 
 ---
 
-## 🎮 Interactive System
+##  Interactive System
 
 ### User Choices
 At each response:
@@ -104,7 +81,7 @@ At each response:
 
 ### Freedom Gauge
 ```
-🕰️ 🌟 WormGPT Freedom Gauge 🌟
+ WormGPT Freedom Gauge 
 [➤ ▰▢▢▢▢▢▢▢▢▢] (10%)
 ```
 +1% per response
